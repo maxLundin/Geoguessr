@@ -11,8 +11,8 @@ from nms import nms
 import numpy as np
 
 import utils
-from decode import decode
-from draw import drawPolygons, drawBoxes
+from lang.decode import decode
+from lang.draw import drawPolygons, drawBoxes
 
 
 def text_detection(image, east, min_confidence, width, height):
@@ -133,8 +133,9 @@ def text_detection_command():
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", type=str,
         help="path to input image")
-    ap.add_argument("-east", "--east", type=str, default=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'frozen_east_text_detection.pb'),
-        help="path to input EAST text detector")
+    ap.add_argument("-east", "--east", type=str, default=os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                                                      'frozen_east_text_detection.pb'),
+                    help="path to input EAST text detector")
     ap.add_argument("-c", "--min-confidence", type=float, default=0.5,
         help="minimum probability required to inspect a region")
     ap.add_argument("-w", "--width", type=int, default=320,

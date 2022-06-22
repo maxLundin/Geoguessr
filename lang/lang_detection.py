@@ -152,7 +152,7 @@ def text_detection(image, east, min_confidence, width, height):
     #
     # # cv2.waitKey(0)
 
-dirs = os.listdir('./lang/')
+dirs = os.listdir('/')
 # for d in dirs:
 d = 'Russia'
 files = os.listdir(f'./lang/{d}')
