@@ -17,7 +17,7 @@ def dataGen(fileNames, dataDir, batchSize=10, infinite=True):
         prev = batchSize * counter
         nxt = batchSize * (counter + 1)
         counter += 1
-        yield self.readData(fileNames[prev:nxt], dataDir)
+        yield readData(fileNames[prev:nxt], dataDir)
         if counter >= totalBatches:
             if infinite:
                 counter = 0
