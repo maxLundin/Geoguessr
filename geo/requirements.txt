@@ -1,0 +1,12 @@
+pandas
+numpy
+jupyter
+shapely
+gmaps
+tensorflow
+sklearn
+tqdm
+spacy
+nltk
+matplotlib
+pickle-mixin
