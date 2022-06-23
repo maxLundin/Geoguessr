@@ -9,3 +9,4 @@ tqdm
 spacy
 nltk
 matplotlib
+pickle-mixin
